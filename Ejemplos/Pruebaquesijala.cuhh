@@ -1,0 +1,6 @@
+clase c{
+  booleano b = verdadero;
+  si(b == falso){
+    b = falso;
+  }
+}

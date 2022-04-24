@@ -1,0 +1,52 @@
+clase pruebaRecorridos{
+
+  entero mesa;   
+ 
+  recorrido mesa1={
+    avanzar(5);
+    espera(1000);
+    rotarR();
+    espera(1000);
+    avanzar(2);
+    rotarL();
+    avanzar(3);
+    notificar();
+  };
+  recorrido regresoMesa1 = {
+    rotarR();
+    rotarR();
+    espera(1000);
+    avanzar(3);
+    espera(1000);
+    rotarR();
+    avanzar(2);
+    espera(1000);
+    rotarL();
+    avanzar(5);
+    espera(1000);
+    rotarR();
+    rotarR();
+  };
+  recorrido mesa2 = {
+    avanzar(5);
+    rotarL();
+    avanzar(3);
+    rotarR();
+    avanzar(3);
+    rotarL();
+    avanzar(2);
+    notificar();
+  };
+  mesa = 0;
+  si(mesa==1){
+    mesa1.start();
+    espera(5000);
+    regresoMesa1.start();
+  }sino{
+    si(mesa == 2){
+      mesa2.start();
+    }sino{
+      notificar();
+    }
+  }
+}

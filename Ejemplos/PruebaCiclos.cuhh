@@ -1,0 +1,7 @@
+clase pruebaCiclos{
+  entero vueltas = 0;
+  mientras(vueltas <= 10){
+    notificar();
+    vueltas++;
+  }
+}

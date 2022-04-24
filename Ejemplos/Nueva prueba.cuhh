@@ -1,0 +1,35 @@
+clase c{
+  booleano b = falso;
+  entero g;
+
+  si(b == verdadero){
+    entero g2 = 1;
+    encender();
+  }
+
+  mientras(b == falso){
+    g = 1;
+    entero x;
+    si(g > 0){
+      x = 1234561132;
+      avanzar();
+    }
+  }
+
+  entero x2;
+  ciclo(entero i = 0; g < 0; i++){
+    x = 0;
+  }
+  apagar();
+
+  recorrido rec = {
+    avanzar();
+    detener();
+    apagar();
+  };
+
+  func funcion(){
+    entero p;
+    rec.start();
+  }
+}
